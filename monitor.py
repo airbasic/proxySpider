@@ -30,7 +30,7 @@ class proxyMonitor():
 	def proxyTest(self,row):
 		proxy = row[0] + ":" + row[1]
 		if 'HTTPS' in row[3]:
-			proxies = { "http": "http://"+proxy, "https": "https://"+proxy}
+			proxies = { "https": "https://"+proxy}
 		else:
 			proxies = { "http": "http://"+proxy}
 		ip = row[0]
